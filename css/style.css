@@ -18,7 +18,7 @@
   --navbarText: #ffffff;
   --navbarTextHover: #000000;
   --bgimageText: #ffffff;
-  --bgimageBg: #000000;
+  --bgimageBg: #0000009d;
 }
 
 /*
@@ -324,9 +324,8 @@ ul{
   inicio de main
 */
 
-
 /*
-  slideshow de imagenes automatico
+  slideshow de imágenes automático
 */
 
 .know-us{
@@ -344,6 +343,9 @@ ul{
 }
 
 .auto-img {
+  width: 150px; 
+  height: 60vmin; 
+  overflow: hidden;
   width: 85vmin;
   position: relative;
   margin: 0 auto;
@@ -421,3 +423,11 @@ ul{
   }
 }
 
+
+
+
+
+
+/*
+  fin de main
+*/
