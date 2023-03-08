@@ -1,0 +1,423 @@
+/*
+  variables
+*/
+
+:root{
+  --manada: #ffb711;
+  --tropa: #00712e;
+  --comunidad: #004cac;
+  --clan: #cb0f22;
+  --consejo: #000000;
+  --principal: #000000;
+  --manadaHover: #ffb71150;
+  --tropaHover: #00712e50;
+  --comunidadHover: #004cac50;
+  --clanHover: #cb0f2250;
+  --navbar: #000000;
+  --navbarHover: #ffffff;
+  --navbarText: #ffffff;
+  --navbarTextHover: #000000;
+  --bgimageText: #ffffff;
+  --bgimageBg: #000000;
+}
+
+/*
+  globales
+*/
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+/*
+  inicio de header
+*/
+
+/*
+  navbar
+*/
+
+.navbar{
+  position: fixed;
+  background-color: var(--navbar);
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  transition: 0.5s;
+}
+
+.logo{
+  margin: 5px;
+  margin-top: 6px;
+  position: fixed;
+  width: 50px;
+  top: -3px;
+}
+
+.navbar ul{
+  display: flex;
+}
+
+.navbar ul li{
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.navbar ul li a{
+  color: var(--navbarText);
+  margin-top: 10px;
+  text-decoration: none;
+  padding: 24px;
+}
+
+.navbar ul li a:hover{
+  color: var(--navbarTextHover);
+  background-color: var(--navbarHover);
+  transition: 0.5s;
+}
+
+.navbar ul.menu{
+  position: fixed;
+  flex: 1;
+  margin-left: 20px;
+}
+
+/*
+  imagen de fondo de inicio
+*/
+
+.bgimage {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/aniversarioGrupo.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bgimage .background {
+  margin: auto;
+  padding: 10px;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+  text-align: center;
+}
+
+.bgimage h1 {
+  display: inline-block;
+  background-color: var(--bgimageBg);
+  padding: 20px;
+  margin: 100px;
+  color: var(--bgimageText);
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: 500;
+  border-radius: 25px;
+}
+
+/*
+  secciones header
+*/
+
+.secciones{
+  margin-top: 25px;
+  margin-left: 10%;
+}
+
+/*
+  sección de manada
+*/
+.manada{
+  margin-top: 10px;
+  position: relative;
+  width: 50%;
+}
+
+.manada .image{
+  display: block;
+  width: 107%;
+  height: auto;
+}
+
+.manada .overlay{
+  border-radius: 25px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--manada);
+  overflow: hidden;
+  width: 107%;
+  height: 0;
+  transition: 0.5s;
+}
+
+.manada:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+
+.manada .text{
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*
+  sección de tropa
+*/
+
+.tropa{
+  margin-top: 10px;
+  position: relative;
+  width: 50%;
+}
+
+.tropa .image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.tropa .overlay{
+  border-radius: 25px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--tropa);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s;
+}
+
+.tropa:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+
+.tropa .text{
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*
+  sección de comunidad
+*/
+
+.comunidad{
+  margin-top: 10px;
+  position: relative;
+  width: 50%;
+}
+
+.comunidad .image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.comunidad .overlay{
+  border-radius: 25px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--comunidad);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s;
+}
+
+.comunidad:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+
+.comunidad .text{
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*
+  sección de clan
+*/
+
+.clan{
+  margin-top: 10px;
+  position: relative;
+  width: 50%;
+}
+
+.clan .image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.clan .overlay{
+  border-radius: 25px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--clan);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s;
+}
+
+.clan:hover .overlay{
+  bottom: 0;
+  height: 100%;
+}
+
+.clan .text{
+  text-transform: uppercase;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*
+  fin de header
+*/
+
+/*
+  inicio de main
+*/
+
+
+/*
+  slideshow de imagenes automatico
+*/
+
+.know-us{
+  background-color: #000000;
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.know-us h2{
+  color: var(--bgimageText);
+}
+
+.know-us p{
+  color: var(--navbarText);
+}
+
+.auto-img {
+  width: 85vmin;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 10% 25% 30% rgba(0, 0, 0, 0.3);
+}
+
+.auto-img img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+
+/*
+  son 7 imágenes pero se divide en 7.5 slides
+  el ultimo valor es el regreso a la primera imagen
+*/
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  6.25%{
+    transform: translateX(0);
+  }
+  12.5% {
+    transform: translateX(-100%);
+  }
+  18.75% {
+    transform: translateX(-100%);
+  }
+  25% {
+    transform: translateX(-200%);
+  }
+  31.25% {
+    transform: translateX(-200%);
+  }
+  37.5%{
+    transform: translateX(-300%);
+  }
+  43.75% {
+    transform: translateX(-300%);
+  }
+  50% {
+    transform: translateX(-400%);
+  }
+  56.25% {
+    transform: translateX(-400%);
+  }
+  62.5% {
+    transform: translateX(-500%);
+  }
+  68.75% {
+    transform: translateX(-500%);
+  }
+  75% {
+    transform: translateX(-600%);
+  }
+  81.25% {
+    transform: translateX(-600%);
+  }
+  87.5% {
+    transform: translateX(-700%);
+  }
+  93.75% {
+    transform: translateX(-700%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
