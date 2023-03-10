@@ -20,6 +20,9 @@
   --navbarTextHover: #000000;
   --bgimageText: #ffffff;
   --bgimageBg: #0000009d;
+  --knowusBG: #000000;
+  --links: #00ff15;
+  --linksHover: #0019fd;
 }
 
 /*
@@ -335,7 +338,7 @@ ul{
 */
 
 .know-us{
-  background-color: #000000;
+  background-color: var(--knowusBG);
   margin-top: 30px;
   padding: 30px;
 }
@@ -433,30 +436,43 @@ ul{
 */
 
 .about-us{
-
+  margin-top: 25px;
 }
 .about-us h2{
-
+  text-transform: uppercase;
 }
 
 .about-us p{
-
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  text-align: justify;
 }
 
 .about-us img{
-
+  position: relative;
+  border-radius: 25px;
+  height: 50vmin; 
+  overflow: hidden;
+  width: 90vmin;
 }
 
 .about-us h3{
-
+  font-weight: 500;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
 }
 
 .about-us h3 a{
-
+  text-decoration: none;
+  color: var(--links);
+  transition: 0.5s;
 }
 
 .about-us h3 a:hover{
-
+  color: var(--linksHover);
+  transition: 0.5s;
 }
 
 /*
